@@ -1,0 +1,119 @@
+/***
+**
+** NAVIGATION 
+*****/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-light;
+    align-items: center;
+    &__container {
+        position: relative;
+        width: 100%
+    }
+
+    &__items {
+
+        display: flex;
+    }
+
+    &__item,
+    .ant-menu-item-only-child {
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+    ul {
+        list-style: none;
+    }
+}
+
+.ant-menu.ant-menu-root {
+    padding: 1rem;
+    .ant-menu-item {
+        
+        &.ant-menu-item-only-child {
+    
+            //  Ant overides 
+            &.ant-menu-item-selected {
+                color: $color-dark;
+                border-bottom: 2px solid $color-dark;
+    
+                a, span {
+                    color: $color-dark;
+                }
+                &.ant-menu-item-active {
+                    color: $color-grey-7;
+                    border-bottom: 2px solid $color-grey-7;
+    
+                    a {
+                        color: $color-grey-7;
+                    }
+                    
+                }
+            }
+            &.ant-menu-item-active {
+                color: $color-grey-7;
+                border-bottom: 2px solid $color-grey-7;
+
+                a {
+                    color: $color-grey-7;
+                }
+                
+            }
+        }
+    
+        //  Ant overides 
+        &.ant-menu-item-selected {
+            color: $color-dark;
+            border-bottom: 2px solid $color-dark;
+
+            a, span {
+                color: $color-dark;
+            }
+            &.ant-menu-item-active {
+                color: $color-grey-7;
+                border-bottom: 2px solid $color-grey-7;
+
+                a {
+                    color: $color-grey-7;
+                }
+                
+            }
+        }
+        &.ant-menu-item-active {
+            color: $color-grey-7;
+            border-bottom: 2px solid $color-grey-7;
+
+            a {
+                color: $color-grey-7;
+            }
+            
+        }
+    }
+    
+}
+
+.shop-menu {
+    position: absolute;
+    top: -3px;
+    background-color: #ffffff;
+    width: 100vw;
+    padding: 2rem;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+
+    &.container {
+        position: relative;
+    }
+
+    &__section {
+        flex-basis: 30%;
+        border-right: solid #e0e0e0 2px;
+        padding: 1rem;
+    }
+
+
+}

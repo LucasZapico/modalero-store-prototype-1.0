@@ -1,0 +1,356 @@
+
+h1,h2,h3,h4,h5,h6 {
+  color: $color-dark;  
+}
+
+p,
+input,
+textarea,
+blockquote,
+code {
+  color: $color-grey-7;
+}
+
+
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+input,
+textarea,
+blockquote,
+code,
+.char-100 {
+  max-width: 620px;
+}
+
+$type-scaler: 1.2;
+$header-font-base-mobile: 16px;
+
+  h1,
+  .h1,
+  .exa {
+    font-size: $header-font-base-mobile * $type-scaler * $type-scaler * $type-scaler * $type-scaler * $type-scaler * $type-scaler;
+  }
+
+  h2,
+  .h2,
+  .peta {
+    font-size: $header-font-base-mobile * $type-scaler * $type-scaler * $type-scaler * $type-scaler * $type-scaler;
+  }
+
+  h3,
+  .h3,
+  .tera {
+    font-size: $header-font-base-mobile * $type-scaler * $type-scaler * $type-scaler * $type-scaler;
+  }
+
+  h4,
+  .h4,
+  .giga {
+    font-size: $header-font-base-mobile * $type-scaler * $type-scaler * $type-scaler;
+  }
+
+  h5,
+  .h5,
+  .mega {
+    font-size: $header-font-base-mobile * $type-scaler * $type-scaler;
+  }
+
+  .kilo-1 {
+    font-size: $header-font-base-mobile * $type-scaler;
+  }
+
+  h6,
+  .h6,
+  .kilo {
+    font-size: $header-font-base-mobile;
+  }
+
+  .micro {
+    font-size: 0.5rem;
+  }
+
+  .milli {
+    font-size: $header-font-base-mobile/$type-scaler;
+  }
+
+
+@media screen and (min-width: $media-small) {
+  $type-scaler: 1.2;
+
+  h1,
+  .h1,
+  .exa {
+    font-size: $header-font-base-mobile * $type-scaler * $type-scaler * $type-scaler * $type-scaler * $type-scaler * $type-scaler;
+  }
+
+  h2,
+  .h2,
+  .peta {
+    font-size: $header-font-base-mobile * $type-scaler * $type-scaler * $type-scaler * $type-scaler * $type-scaler;
+  }
+
+  h3,
+  .h3,
+  .tera {
+    font-size: $header-font-base-mobile * $type-scaler * $type-scaler * $type-scaler * $type-scaler;
+  }
+
+  h4,
+  .h4,
+  .giga {
+    font-size: $header-font-base-mobile * $type-scaler * $type-scaler * $type-scaler;
+  }
+
+  h5,
+  .h5,
+  .mega {
+    font-size: $header-font-base-mobile * $type-scaler * $type-scaler;
+  }
+
+  .kilo-1 {
+    font-size: $header-font-base-mobile * $type-scaler;
+  }
+
+  h6,
+  .h6,
+  .kilo {
+    font-size: $header-font-base-mobile;
+  }
+
+  .micro {
+    font-size: 0.5rem;
+  }
+
+  .milli {
+    font-size: $header-font-base-mobile/$type-scaler;
+  }
+
+
+
+}
+
+@media screen and (min-width: $media-med) {
+  $type-scaler: 1.25;
+
+  h1,
+  .h1,
+  .exa {
+    font-size: $header-font-base-mobile * $type-scaler * $type-scaler * $type-scaler * $type-scaler * $type-scaler * $type-scaler;
+  }
+
+  h2,
+  .h2,
+  .peta {
+    font-size: $header-font-base-mobile * $type-scaler * $type-scaler * $type-scaler * $type-scaler * $type-scaler;
+  }
+
+  h3,
+  .h3,
+  .tera {
+    font-size: $header-font-base-mobile * $type-scaler * $type-scaler * $type-scaler * $type-scaler;
+  }
+
+  h4,
+  .h4,
+  .giga {
+    font-size: $header-font-base-mobile * $type-scaler * $type-scaler * $type-scaler;
+  }
+
+  h5,
+  .h5,
+  .mega {
+    font-size: $header-font-base-mobile * $type-scaler * $type-scaler;
+  }
+
+  .kilo-1 {
+    font-size: $header-font-base-mobile * $type-scaler;
+  }
+
+  h6,
+  .h6,
+  .kilo {
+    font-size: $header-font-base-mobile;
+  }
+
+  .micro {
+    font-size: 0.5rem;
+  }
+
+  .milli {
+    font-size: $header-font-base-mobile/$type-scaler;
+  }
+
+}
+
+@media screen and (min-width: $media-large) {
+
+  
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li,
+  input,
+  textarea,
+  blockquote,
+  code,
+  .char-100 {
+    max-width: 620px;
+  }
+
+  .char-80 {
+    max-width: 520px;
+  }
+
+  .char-50 {
+    max-width: 320px;
+  }
+
+}
+
+@media screen and (min-width: $media-xlarge) {
+
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6 {
+    font-family: $header-font-family;
+    line-height: $header-line-height;
+    margin: 0px;
+    font-weight: $header-weight;
+  }
+
+
+  p {
+    margin-bottom: 1.3rem;
+    font-size: $base-font-size;
+  }
+
+  p,
+  ul,
+  ol,
+  dl,
+  figure,
+  blockquote,
+  table,
+  hr {
+    line-height: 1.5;
+  }
+
+
+  h1,
+  .h1,
+  .exa {
+    font-size: $header-font-base-mobile * $type-scaler * $type-scaler * $type-scaler * $type-scaler * $type-scaler * $type-scaler;
+  }
+
+  h2,
+  .h2,
+  .peta {
+    font-size: $header-font-base-mobile * $type-scaler * $type-scaler * $type-scaler * $type-scaler * $type-scaler;
+  }
+
+  h3,
+  .h3,
+  .tera {
+    font-size: $header-font-base-mobile * $type-scaler * $type-scaler * $type-scaler * $type-scaler;
+  }
+
+  h4,
+  .h4,
+  .giga {
+    font-size: $header-font-base-mobile * $type-scaler * $type-scaler * $type-scaler;
+  }
+
+  h5,
+  .h5,
+  .mega {
+    font-size: $header-font-base-mobile * $type-scaler * $type-scaler;
+  }
+
+  .kilo-1 {
+    font-size: $header-font-base-mobile * $type-scaler;
+  }
+
+  h6,
+  .h6,
+  .kilo {
+    font-size: $header-font-base-mobile;
+  }
+
+  .micro {
+    font-size: 0.5rem;
+  }
+
+  .milli {
+    font-size: $header-font-base-mobile/$type-scaler;
+  }
+
+
+  em {
+    font-style: italic;
+  }
+
+  blockquote {
+    background-color: darken($color-d, 5%);
+    margin: 0px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-left: solid 5px darken($color-d, 20%);
+  }
+
+  pre {
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    font-size: 95%;
+    line-height: 140%;
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+  }
+
+  code {
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    font-size: 95%;
+    line-height: 140%;
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    background: #faf8f0;
+    color: #333333;
+  }
+
+  p,
+  li,
+  input,
+  textarea,
+  blockquote,
+  code,
+  .char-100 {
+    max-width: 1070px;
+  }
+
+  .char-80 {
+    max-width: 900px;
+  }
+
+  .char-50 {
+    max-width: 550px;
+  }
+
+}

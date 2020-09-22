@@ -1,0 +1,89 @@
+.home-hero {
+    &__img {
+        background-image: url('../img/hero.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        // background-position: right -400px;
+        width: 100%;
+        height: 100%;
+
+        z-index: 1;
+
+    }
+
+    &__content {
+        margin-top: 4rem;
+        margin-left: 4rem;
+        position: absolute;
+
+    }
+
+    &__container {
+        position: relative;
+        width: 100%;
+        height: 800px;
+        overflow: hidden;
+
+        .ant-image {
+
+            position: absolute;
+            width: 100%;
+            height: 800px;
+
+            .ant-image-img {
+                margin-top: -500px;
+                width: 100%;
+                object-position: right top;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+
+.section {
+    &--small {
+        min-height: 400px;
+    }
+
+    &--default {
+        min-height: 800px;
+    }
+
+}
+
+.home__featured {
+    display: flex;
+    flex-wrap: wrap;
+    .col {
+        flex-basis: 50%;
+    }
+    .featured-one {
+        transition: all ease-in-out .2s;
+        background-color: $color-dark;
+        background-image: url('../img/featured/mango_05_1920x.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 -100px;
+        
+        width: 100%;
+        height: 50%;
+        &:hover, &:focus {
+            background-image: url('../img/featured/mango_03_1920x.jpg');
+        }
+    }
+    .featured-two {
+        transition: all ease-in-out .2s;
+        background-color: $color-dark;
+        background-image: url('../img/featured/mango_04_1920x.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 -100px;
+        
+        width: 100%;
+        height: 50%;
+        &:hover, &:focus {
+            background-image: url('../img/featured/mango_01_1920x.jpg');
+        }
+    }
+}

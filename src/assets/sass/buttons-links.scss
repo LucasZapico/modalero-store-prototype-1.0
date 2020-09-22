@@ -1,0 +1,45 @@
+.cta {
+    font-size: $header-font-base-mobile * $type-scaler * $type-scaler;
+    display: flex;
+    justify-content: flex-start;
+    color: $color-dark;
+
+    &__content {
+        border-bottom: 2px solid $color-dark;
+        margin-right: .5rem;
+
+        &:hover,
+        &:focus {
+            border-bottom: 2px solid $color-grey-7;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        color: $color-grey-6;
+
+
+
+    }
+}
+
+.bg--dark {
+    .cta {
+        &__content {
+            border-bottom: 2px solid $color-light;
+            margin-right: .5rem;
+    
+            &:hover,
+            &:focus {
+                border-bottom: 2px solid $color-grey-3;
+            }
+        }
+        &:hover,
+        &:focus {
+            color: $color-grey-3;
+    
+    
+    
+        }
+    }
+}

@@ -1,0 +1,45 @@
+
+.color-primary {
+    color: $color-dark;  
+}
+
+.color-sec {
+    color: $color-grey-7;
+}
+
+.bg--dark {
+    .color-primary {
+        color: $color-light;  
+    }
+    
+    .color-sec {
+        color: $color-grey-3;
+    }
+}
+
+
+.strong {
+    font-weight: 700;
+}
+
+.display-caption {
+    max-width: 300px;
+  }
+
+
+
+@media screen and (min-width: $media-small) {
+  
+}
+
+@media screen and (min-width: $media-med) {
+  
+}
+
+@media screen and (min-width: $media-large) {
+  
+}
+
+@media screen and (min-width: $media-xlarge) {
+  
+}
