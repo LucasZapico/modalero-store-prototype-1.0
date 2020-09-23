@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Iceberg 2020 Coffee Table",
+        "image": "../assets/img/ice-berg-coffee-table/image_057b0e99-6600-4b69-b4dc-b95682599897_768x.jpg",
+        "collection": "coffee-table",
+        "price": 2700,
+        "quanity": 1,
+        "dimensions": "W39.5 x L39.5 x H18",
+        "description": "Can you imagine a table that leaves a strong impression and from which you can't take your eyes off?\n  Something absolutely impressive that reveals the essential issues of humanity. Once our team could imagine such a table. And not only imagine, but create and invest in it the most daring ideas.\n        And we got it.\n        Here it is - Iceberg 2020. "
+    },
+    {
+        "title": "Buckeye Burl Round Coffee Table",
+        "image": "../assets/img/buckeye-burl-round-coffee-table/buckeye_02_1920x.jpg",
+        "collection": "coffee-table",
+        "price": 1500,
+        "quanity": 1,
+        "dimensions": "W39.5 x L39.5 x H18",
+        "description": "This drop-dead gorgeous table is quite the center piece. Encapsulated in semi-transparent smoky grey epoxy is this natural work of art. Each table is similar but completely unique. Contact us for your custom table."
+    },
+    {
+        "title": "Black Walnut Epoxy Coffee Table",
+        "image": "../assets/img/black-walnut-black-coffee-table/1a_2_768x.jpg",
+        "collection": "coffee-table",
+        "price": 950,
+        "quanity": 1,
+        "dimensions": "W28.5 x L28.5 x H16.25",
+        "description": "The natural colors on this coffee table are stunning. This coffee table is the perfect balance of rustic and modern."
+    },
+    {
+        "title": "Conference Table Black Walnut",
+        "image": "../assets/img/black-walnut-conference-table/black_beauty_02_768x.jpg",
+        "collection": "large-table",
+        "price": 9850,
+        "quanity": 1,
+        "dimensions": "W40 x L112 x H33",
+        "description": "The reclaimed slab came from a local, family-owned shop. The steel legs are custom-built and covered with a matte black finish. Modalero specializes in simple, modern, & industrial style furniture, custom made and hand-crafted. All items are handmade in our Portland, OR using reclaimed & re-purposed woods."
+    }
+]

@@ -114,6 +114,8 @@
         border-right: solid #e0e0e0 2px;
         padding: 1rem;
     }
-
+    &__item {
+        color: $color-grey-6;
+    }
 
 }

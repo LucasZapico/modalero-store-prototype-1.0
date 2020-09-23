@@ -10,7 +10,7 @@ const HomeHero = () => {
   return (
     <div className="home-hero__container">
         <div className="home-hero__content">
-        <h2 className="super-header--h1">Hand Crafted</h2>
+        <h2 className="super-header--h1">Hand Crafted Furniture</h2>
         <h1 className=" strong">One Of A Kind Statements</h1>
         <Link className="cta ">
         <div className="cta__content">Shop Collections</div>

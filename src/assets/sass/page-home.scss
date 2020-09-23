@@ -87,3 +87,22 @@
         }
     }
 }
+
+// collections 
+
+.collection {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        display: flex;
+        flex-basis: 100%;
+    }
+    &__content {
+        flex-basis: 50%;
+    }
+    &__image {
+        flex-basis: 50%;
+    }
+}

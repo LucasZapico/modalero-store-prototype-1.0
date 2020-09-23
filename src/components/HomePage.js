@@ -5,6 +5,7 @@ import ShopMenu from './ShopMenu'
 import {
   ArrowRightOutlined
 } from "@ant-design/icons";
+import Collections from "./Collection";
 
 const HomeFeatured = () => {
   return (
@@ -38,11 +39,12 @@ const HomePage = () => {
       <section className="section--small">
         <div className="margin__vert--l">
         <h3 className=" center">Our Philosophy</h3>
-        <h5 className="center margin__top color-sec">We believe their is a synergy between nature and human and when a harmony is found beauty, function and elegance like no other is created. Each piece we craft is a our endeavour to find that synergy</h5>
+        <h5 className="center margin__top color-sec">We make furniture that are one of a kind blends of natural and modern beauty. Each piece we craft is an endeavor to celebrate function and elegance.</h5>
         
         </div>
       </section>
       <HomeFeatured/>
+      <Collections/>
     </div>
   );
 };
