@@ -1,0 +1,35 @@
+[ 
+    
+    {
+        "title": "Large Table",
+        "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem fecisset Epicurus, si sententiam hanc, quae nunc Hieronymi est, coniunxisset cum Aristippi vetere sententia. ",
+        "images": [
+            "/walnut-black-credenza/5_768x.jpg"
+            
+        ]
+    },
+    {
+        "title": "Coffee Table",
+        "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem fecisset Epicurus, si sententiam hanc, quae nunc Hieronymi est, coniunxisset cum Aristippi vetere sententia. ",
+        "images": [
+            "/walnut-black-credenza/5_768x.jpg"
+            
+        ]
+    },
+    {
+        "title": "Standing Desk",
+        "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem fecisset Epicurus, si sententiam hanc, quae nunc Hieronymi est, coniunxisset cum Aristippi vetere sententia. ",
+        "images": [
+            "/walnut-black-credenza/5_768x.jpg"
+            
+        ]
+    },
+    {
+        "title": "Credenza",
+        "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem fecisset Epicurus, si sententiam hanc, quae nunc Hieronymi est, coniunxisset cum Aristippi vetere sententia. ",
+        "images": [
+            "/walnut-black-credenza/5_768x.jpg"
+            
+        ]
+    }
+]

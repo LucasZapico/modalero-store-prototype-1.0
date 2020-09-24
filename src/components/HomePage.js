@@ -21,7 +21,7 @@ const HomeFeatured = () => {
       </Link>
       </div>
       <div className="col">
-        <div className="featured-one margin__bottom--m">
+        <div className="featured-one ">
 
         </div>
         <div className="featured-two ">
