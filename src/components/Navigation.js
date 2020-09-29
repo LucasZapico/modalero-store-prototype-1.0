@@ -74,6 +74,8 @@ const MainMenu = () => {
       <li className="nav__item">
         <Link to="/">Articles</Link>&nbsp;
       </li>
+      <ClickOutSide handleClickOutside={handleClickOutside}>
+        <>
       <li
         className="nav__item nav__item--active"
         onClick={() => setToggleShop(!toggleShop)}
@@ -88,9 +90,8 @@ const MainMenu = () => {
             ...height
         
           }}>
-          <ClickOutSide handleClickOutside={handleClickOutside}>
+        
           <ShopMenu />
-          </ClickOutSide>
           </div>
         {/* <animated.div
           style={{
@@ -106,7 +107,10 @@ const MainMenu = () => {
           </div>
         </animated.div> */}
       </li>
+        </>
+        </ClickOutSide>
     </>
+    
   );
 };
 
