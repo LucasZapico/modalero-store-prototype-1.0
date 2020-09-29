@@ -3,119 +3,177 @@
 ** NAVIGATION 
 *****/
 
+
+.container {
+    &__nav {
+        position: fixed;
+        background-color: $color-light;
+        z-index: 2;
+        top: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
 .nav {
     display: flex;
+    width: 100%;
     justify-content: space-between;
-    background-color: $color-light;
-    align-items: center;
-    &__container {
-        position: relative;
-        width: 100%
+
+    ul {
+        margin: 0px;
+        padding: 0px;
     }
 
     &__items {
-
+        list-style: none;
+        width: 100%;
         display: flex;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+
+        &--end {
+            justify-content: flex-end;
+        }
     }
 
-    &__item,
-    .ant-menu-item-only-child {
+
+    &__item {
+        display: flex;
+        align-items: top;
+
+        a {
+            // margin-right: .5rem;
+        }
+
         padding: 1rem;
         cursor: pointer;
+
+        &--active {}
     }
+
+
+}
+
+
+
+.mobile-nav {
+    z-index: 3;
+    transition: all ease-in-out .2s;
+    position: fixed;
+    right: 0px;
+    background-color: #eff0f3;
+    top: 3rem;
+    height: 100%;
+    width: 0px;
+    min-width: 0px;
+    display: flex;
+    flex-direction: column;
 
     ul {
-        list-style: none;
-    }
-}
-
-.ant-menu.ant-menu-root {
-    padding: 1rem;
-    .ant-menu-item {
-        
-        &.ant-menu-item-only-child {
-    
-            //  Ant overides 
-            &.ant-menu-item-selected {
-                color: $color-dark;
-                border-bottom: 2px solid $color-dark;
-    
-                a, span {
-                    color: $color-dark;
-                }
-                &.ant-menu-item-active {
-                    color: $color-grey-7;
-                    border-bottom: 2px solid $color-grey-7;
-    
-                    a {
-                        color: $color-grey-7;
-                    }
-                    
-                }
-            }
-            &.ant-menu-item-active {
-                color: $color-grey-7;
-                border-bottom: 2px solid $color-grey-7;
-
-                a {
-                    color: $color-grey-7;
-                }
-                
-            }
-        }
-    
-        //  Ant overides 
-        &.ant-menu-item-selected {
-            color: $color-dark;
-            border-bottom: 2px solid $color-dark;
-
-            a, span {
-                color: $color-dark;
-            }
-            &.ant-menu-item-active {
-                color: $color-grey-7;
-                border-bottom: 2px solid $color-grey-7;
-
-                a {
-                    color: $color-grey-7;
-                }
-                
-            }
-        }
-        &.ant-menu-item-active {
-            color: $color-grey-7;
-            border-bottom: 2px solid $color-grey-7;
-
-            a {
-                color: $color-grey-7;
-            }
-            
-        }
-    }
-    
-}
-
-.shop-menu {
-    position: absolute;
-    top: -3px;
-    background-color: #ffffff;
-    width: 100vw;
-    padding: 2rem;
-    height: 500px;
-    display: flex;
-    justify-content: space-between;
-
-    &.container {
-        position: relative;
+        margin: 0px;
+        padding: 0px;
     }
 
-    &__section {
-        flex-basis: 30%;
-        border-right: solid #e0e0e0 2px;
+    .nav {
+    &__items {
+        flex-direction: column;
         padding: 1rem;
     }
+    &__item {
+        
+        padding-left: 1rem;
+    }
+}
+    &--active {
+        min-width: 100vw;
+        width: 100vw;
+    }
+    
+.shop-menu {
+    width: 100%;
+    &.container {
+        
+        display: flex;
+        justify-content: space-between;
+    }
+    &__section {
+        padding-right: 2rem;
+    }
+   
     &__item {
         color: $color-grey-6;
     }
 
 }
+
+}
+
+.toggle {
+    display: flex;
+
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+
+    &--center {
+        justify-content: center;
+    }
+
+    &--end {
+        justify-content: flex-end;
+    }
+
+    &--start {
+
+        justify-content: flex-start;
+
+    }
+}
+
+
+
+
+
+@media screen and (min-width: $media-small) {}
+
+@media screen and (min-width: $media-med) {
+
+
+    .shop-menu {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 500px;
+        // position: absolute;
+        top: -3px;
+        background-color: #ffffff;
+        width: 100vw;
+        left: 0px;
+        padding: 2rem;
+        height: auto;
+        display: flex;
+
+        justify-content: space-between;
+        z-index: 2;
+
+        &.container {}
+
+        &__section {
+            flex-basis: 30%;
+            border-right: solid #e0e0e0 2px;
+            padding: 1rem;
+        }
+
+
+        &__item {
+            color: $color-grey-6;
+        }
+
+    }
+}
+
+@media screen and (min-width: $media-large) {}
+
+@media screen and (min-width: $media-xlarge) {}
