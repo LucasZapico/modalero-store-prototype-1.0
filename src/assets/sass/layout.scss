@@ -1,6 +1,8 @@
 // two column 
 
 
+
+
 @media screen and (min-width: $media-small) {
   
 }
@@ -10,7 +12,13 @@
 }
 
 @media screen and (min-width: $media-large) {
-  
+    .container {
+        &__content {
+            width: 100%;
+            max-width: 1440px;
+            margin: auto;
+        }
+    }
 }
 
 @media screen and (min-width: $media-xlarge) {
