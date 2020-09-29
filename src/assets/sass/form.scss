@@ -46,7 +46,7 @@ textarea {
   &--email {
     height: 100%;
     background-color: $color-light;
-    color: $color-d;
+    color: $color-dark;
     // border-top-left-radius: 5px;
     // border-bottom-left-radius: 5px;
     width: 100%;
@@ -62,31 +62,25 @@ textarea {
     }
   }
   &--submit {
-    // border-top-right-radius: 5px;
-    // border-bottom-right-radius: 5px;
-    // border-bottom-left-radius: 5px;
-    // border-top-left-radius: 5px;
+    background-color: transparent;
+    border: 2px solid $color-dark;
+    text-align: left;
     cursor: pointer;
-    border-radius: 10px;
-    border: solid $color-d 1px;
-    background-color: $color-light;
+    
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     padding-left: 1rem;
     padding-right: 1rem;
     transition: all ease-in-out 0.2s;
-    color: $color-e;
     width: 100%;
     display: block;
     &:hover,
     &:focus {
-      border: solid $color-light 1px;
-      background-color: $color-light;
-      color: $color-light;
+      
     }
 
     &:active {
-      background-color: $color-light;
+      
     }
   }
 }

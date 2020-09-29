@@ -1,8 +1,20 @@
-import React from "react"
+import React, { useState } from 'react';
 import { Image } from 'antd';
-import Mark from '../assets/img/mark.png'
+import Mark from '../assets/img/mark.png';
+import { ArrowRightOutlined } from '@ant-design/icons';
 
 const Footer = () => {
+  const [formInput, setFormInput] = useState({
+    email: '',
+  });
+  const handleFormChange = (e) => {
+    const newFormData = formInput;
+    newFormData[e.target.type] = e.target.value;
+    console.log(formInput);
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <footer className="footer">
       <div className="">
@@ -11,12 +23,15 @@ const Footer = () => {
             <h3 className="h2">Stay In Touch</h3>
             {/* <p>Get emails from us once and a while.</p> */}
           </div>
-          <form className="form">
+          <form className="form" onSubmit={(e) => handleSubmit(e)}>
             <div>
               <input
                 type="email"
-                // value=""
+                defaultValue={formInput.email}
                 name="EMAIL"
+                onChange={(e) => {
+                  handleFormChange(e);
+                }}
                 className="form--email h2"
                 id="mce-EMAIL"
                 placeholder="enter email address"
@@ -33,37 +48,32 @@ const Footer = () => {
               />
             </div>
             <div className="clear">
-              <input
-                type="submit"
-                value="Sign Me Up"
-                name="subscribe"
-                id="mc-embedded-subscribe"
-                className="form--submit btn--primary__invert"
-              />
+              <div
+                className="cta form--submit "
+                onSubmit={(e) => handleSubmit(e)}
+              >
+                Sign Me Up&nbsp;
+                <ArrowRightOutlined />{' '}
+              </div>
             </div>
           </form>
         </div>
         <hr></hr>
         <div className="footer--contact">
-            <div className="">
-            <Image
-      width={200}
-      src={Mark}
-    />
-            </div>
+          <div className="">
+            <Image width={200} src={Mark} />
+          </div>
           <div className="contact">
             <div>
               <div className="contact__email">
-                <h5>Make or check and order</h5>
+                <div className="contact__header">Make or check and order</div>
                 Orders@Modalero.shop
               </div>
-              
             </div>
             <div className="contact__phone">
-                <h5>Give us a call</h5>
-                +1 360 355 5318
-              </div>
-            
+              <div className="contact__header">Give us a call</div>
+              +1 360 355 5318
+            </div>
           </div>
           <div>
             {/* <h4 className="footer--email">
@@ -75,13 +85,13 @@ const Footer = () => {
           {/* © 2020, Built with <a href="https://www.gatsbyjs.org">Gatsby</a> */}
           <div>
             {/*  */}
-            Last-Modified: 09/22/2020
+            Last-Modified: Sep 29 2020
             {/*  */}
           </div>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
