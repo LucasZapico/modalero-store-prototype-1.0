@@ -12,9 +12,9 @@ import largeTable from '../assets/img/black-walnut-conference-table/black_beauty
 const Collections = () => {
   return (
     <div className="collection collection__container margin__vert--l">
-      {collectionData.map((i) => {
+      {collectionData.map((i, index) => {
         return (
-          <div className="collection__item">
+          <div key={index} className="collection__item">
             <div className="collection__content margin__all--l">
               <h3>{i.title}</h3>
               <h6>{i.description}</h6>
